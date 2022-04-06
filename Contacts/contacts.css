@@ -1,0 +1,823 @@
+
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: var(--color-fundo-darker);
+    position:fixed;
+    top:0;
+    left: 0;
+    z-index: 20;
+    width: 100%;
+    
+}
+.logo a{
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-decoration: none;
+}
+#bio{
+    color:var(--color-green);
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    min-width: 60%;
+    position: relative;
+    z-index: 3;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 2px 25px var(--color-green);
+    padding: 10px;
+    
+    
+
+}
+
+
+
+.nav-links li{
+    list-style-type: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+        
+}
+
+.nav-links li.active{
+
+border-bottom:1px solid var(--color-green);
+transition: all 0.5s ease;
+
+
+}
+
+
+.slide{
+    position: absolute;
+    
+}
+.nav-links li:hover > a{
+    color:var(--color-green);   
+    
+}
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 17px;
+    font-weight: 400;
+    transition: 0.5s;
+    
+    
+    
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-top: 6px;
+    transition: all 0.3s ease;
+
+}
+
+   /*main & maincontent*/
+   .main{
+    
+    margin: 0;
+    width:100%;
+    height:110vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-fundo-darker) url(../imagens/shape4.png);
+    color:rgb(253, 250, 250);
+    background-size: cover;
+    margin-top: -25px;
+
+}
+.pageinfo h1{
+  display: flex;
+  position: absolute;
+  top: 200px;
+  left:250px;
+  font-size: 2em;
+  font-family: "poppins", sans-serif;
+  letter-spacing: 5px;
+}
+
+.maincontent{
+    padding-top: 150px;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.maincontent h1{
+    width: 500px;
+    height: 100px;
+    font-family: "poppins", sans-serif;
+    padding: 80px 0px;
+    margin: 0px 20px;
+    font-weight: 400;
+    color: var(--color-green);
+    font-size:1.8em ;
+    
+}
+.maincontent p{
+    width: 500px;
+    height: 400px;
+    font-family: "poppins", sans-serif;
+    font-size: 1.5em;
+    margin: 0px 20px;
+    
+    
+}
+
+/*cards*/
+.sectiongallery{
+    width: 100%;
+    height: auto;
+    background:linear-gradient(var(--color-fundo-darker), var(--color-fundo-darker));
+}
+.core{
+  background:linear-gradient(var(--color-fundo-darker), var(--color-fundo));
+  padding-bottom: 50px;
+}
+.Pharma{
+  background:linear-gradient(var(--color-fundo-darker), var(--color-fundo-darker));
+  padding-bottom: 50px;
+}
+.sectiongallery h1{
+    display: flex;
+    color: var(--color-green);
+    justify-content: center;
+    padding: 80px 0px 100px 0px;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1170px;
+    padding: 1.5rem 1rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
+  
+.gallery-card {
+  width: 31%;
+  height: 400px;
+  margin-bottom: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  margin: 10px;
+}
+  .gallery-card-title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+  .gallery-card-btn {
+    padding: 0.6rem 2rem;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .gallery-card-btn:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .gallery #card-1 {
+    background-image: url("../imagens/staff/manuelcarrondo.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-1:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: url("../imagens/staff/manuelcarrondo.png");
+  }
+  .gallery #card-2 {
+    background-image: url("../imagens/staff/josebrito.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-2:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image:url("../imagens/staff/josebrito.jpg");
+  }
+  .gallery #card-3 {
+    background-image: url("../imagens/staff/antoniorodrigues.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-3:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image:url("../imagens/staff/antoniorodrigues.png");
+  }
+  .gallery #card-4 {
+    background-image: url("../imagens/staff/paulaneves.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-4:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image:url("../imagens/staff/paulaneves.png");
+  }
+  .gallery #card-5 {
+    background-image: url("../imagens/staff/ruifrade.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-5:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image:url("../imagens/staff/ruifrade.jpg");
+  }
+  .gallery #card-6 {
+    background-image: url("../imagens/staff/pedromatias.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-6:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image:url("../imagens/staff/pedromatias.jpg");
+  }.gallery #card-6:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image:url("../imagens/staff/pedromatias.jpg");
+  }
+  .gallery #card-7 {
+    background-image: url("../imagens/staff/JoaoClemente.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-7:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image:url("../imagens/staff/JoaoClemente.jpg");
+  }
+  .gallery #card-8 {
+    background-image: url("../imagens/staff/pedrocruz.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-8:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image:url("../imagens/staff/pedrocruz.jpg");
+  }
+  .gallery #card-9 {
+    background-image: url("../imagens/staff/Tiago-Bandeiras.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-9:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image:url("../imagens/staff/Tiago-Bandeiras.jpg");
+  }
+  .gallery #card-10 {
+    background-image: url("../imagens/staff/dulce.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-10:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image:url("../imagens/staff/dulce.jpg");
+  }
+
+  .gallery #card-11 {
+    background-image: url("../imagens/staff/Catarina-Brito.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-11:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image:url("../imagens/staff/Catarina-Brito.jpg");
+  }
+  .gallery #card-12 {
+    background-image: url("../imagens/staff/Cristina-Peixoto.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-12:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image:url("../imagens/staff/Cristina-Peixoto.jpg");
+  }
+  .gallery #card-13 {
+    background-image: url("../imagens/staff/Ana-Coroadinha.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-13:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image:url("../imagens/staff/Ana-Coroadinha.jpg");
+  }
+  .gallery #card-14 {
+    background-image: url("../imagens/staff/MSerra.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-14:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image:url("../imagens/staff/MSerra.png");
+  }
+  .gallery #card-15 {
+    background-image: url("../imagens/staff/Ines-Isidro.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-15:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image:url("../imagens/staff/Ines-Isidro.jpg");
+  }
+  .gallery #card-16 {
+    background-image: url("../imagens/staff/Pedro-Sousa.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-16:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image:url("../imagens/staff/Pedro-Sousa.jpg");
+  }
+  
+  
+
+@media (max-width: 882px) {
+  .gallery {
+    flex-direction: column;
+    
+  }
+  .gallery-card {
+    width: 90%;
+    margin-bottom: 6%;
+    justify-self: center;
+    align-self: center;
+    justify-items: center;
+    justify-content: center;
+    
+    
+  }
+}
+
+  .contacts{
+    display: grid;
+    height: 120vh;
+    z-index: 2;
+    background: var(--color-fundo-darker) url(../imagens/shapecontacts.png);;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    ". box5 . box10 . ."
+    "box9 box9 box1 . box3 box11" 
+    ". box7 box7 box2 . ." 
+    ". box6 box6 . box4  box8"
+    ". box12 . . box4 .";
+   
+  }
+
+  .box8{
+    grid-area: box8;
+    background-color:var(--color-fundo-darker);
+    
+  }
+  .box9{
+    grid-area: box9;
+    
+    background-color:var(--color-fundo-darker);
+  }
+  .box10{
+    grid-area: box10;
+    background-color:var(--color-fundo-darker);
+    
+  }
+  .box11{
+    grid-area: box11;
+    background-color:var(--color-fundo-darker);
+   
+    
+  }
+  .box12{
+    grid-area: box12;
+    background-color:var(--color-fundo-darker);
+    z-index: 1;
+  }
+
+  .h1{
+    grid-area: box5;
+    color:var(--color-green);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.9em;
+  }
+  .address{
+    grid-area: box1;
+    background-color: var(--color-light-blue);
+    color:var(--color-fundo-darker);
+    min-width: 160px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 1.3em;
+    text-align: center;
+    z-index: 1;
+    
+  
+  }
+  .general{
+    grid-area: box2;
+    background-color:var(--color-green);
+    min-width: 160px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    font-size: 1.3em;
+    z-index: 1;
+    
+    
+    
+  }
+  .Phones{
+    grid-area: box3;
+    background-color:white;
+    min-width: 160px;
+    display:flex;
+    justify-content:space-evenly;;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 1.2em;
+    color:var(--color-green);
+    text-align: center;
+    font-size: 1.3em;
+    z-index: 1;
+    
+    
+  }
+  .coordinates{
+    grid-area: box4;
+    background-color:var(--color-fundo-darker) ;
+    min-width: 200px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 1.2em;
+    color:var(--color-light-green);
+    text-align: center;
+    font-size: 1.3em;
+    z-index: 1;
+    
+  }
+  .h1two{
+    grid-area: box7;
+    color:var(--color-green);
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.9em;
+    padding-bottom: 40px;
+    z-index: 1;
+    
+  }
+
+  .coordinatesmap{
+    grid-area: box6;
+    background-color:white ;
+    min-width: 200px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 1.2em;
+    color:var(--color-fundo-darker);
+    text-align: center;
+    font-size: 1.3em;
+    z-index: 1;
+    
+  }
+  .social i{
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+}
+
+
+.fa-instagram{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.fa-twitter{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.fa-facebook-f{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+    
+
+  @media screen and (max-width:795px){
+    .contacts{
+      display: flex;
+      flex-direction: column;
+      padding: 40px 0px 40px 0px;
+      height: auto;
+    }
+    .address, .general, .Phones, .coordinates, .coordinatesmap, .h1, .h1two{
+      margin: 20px 10px;
+      padding: 40px 0px 40px 0px;
+    }
+
+  }
+  
+  
+  footer {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  footer span {
+    font-weight: bold;
+    color: #20c997;
+  }
+/*cards*/
+
+
+
+
+ /*animation nav text entering*/
+ @keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translate(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+/*animation nav text entering*/
+@media screen and (max-width:795px){
+
+    body{
+    overflow-x: hidden;
+    }
+    
+    .maincontent{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .maincontent h1{
+        margin-bottom: 120px;
+    }
+    .fa-brands{
+      display: flex;
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+      align-items: center;
+      margin: 0px 10px 0px 10px;
+      
+  }
+    
+        
+    
+    .nav-links{
+        position: fixed;
+        right:0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: var(--color-fundo);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        /*width: 100%;*/
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    
+    }
+    .nav-links li{
+    opacity: 0;
+    }
+    .burger{
+        display: block;
+        overflow:hidden;
+    }
+    }
+    
+    .nav-active{
+        transform: translateX(0%);
+    }
+    
+    
+    
+    
+    /*burguer animation*/
+    .toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+    
+    }
+    .toggle .line2{
+    opacity: 0;
+    
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+        
+    }
+    /*burguer animation*/
+
+
+      /*footer*/
+.col2 {
+  display: flex;
+}
+
+footer {
+  
+  background: linear-gradient(90.73deg, var(--color-green) 4%, var(--color-fundo-dark));
+  padding: 2em 1em;
+  color: #1A1A1A;
+  font-weight: bold;
+  position: relative;
+  left: 0;
+  bottom:0;
+  width: 100%;
+  z-index: 9;
+  
+}
+  .all {
+      margin: .3em 0 0 .5em;
+      font-size: 2rem;
+  }
+
+  .parent {
+      display: block;
+  }
+
+  .twitter {
+      width: 2em;
+      margin-left: .5em;
+  }
+
+  .social {
+      margin-top: 2em;
+  }
+
+  a {
+      color: black;
+      text-decoration: none;
+  }
+
+  .angle-line {
+      margin-top: 1.2em;
+  }
+  /*footer*/
+    
+/* media footer*/
+
+
+@media only screen and (min-width: 750px) {
+   
+  footer {
+      padding: 3em;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) { 
+
+  
+  footer {
+      margin: 0;
+      padding: 6em;
+  }
+      .parent {
+          max-width: 1150px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+      }
+
+      .social {
+          margin: 0;
+      }
+
+      .learn, .skillform {
+          margin: 1em;
+      }
+      
+      
+
+  
+}
